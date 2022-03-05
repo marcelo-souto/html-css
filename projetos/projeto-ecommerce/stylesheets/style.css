@@ -118,20 +118,18 @@ section {
 }
 
 section h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Goldman';
     text-transform: uppercase;
     font-size: max(4vw, 50px);
     z-index: 1;
     letter-spacing: 0.1em;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.247);
 }
 
 section p {
     padding-top: 20px;
-    color: white;
+    color: #272635;
     font-size: max(2vw, 30px);
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.26);
 }
 
 main {
@@ -232,6 +230,18 @@ footer p {
         height: 102px;
     }
 
-   
+    section {
+        height: 125px;
+    }
 
+}
+
+@media (max-width: 470px) {
+    section h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.5em;
+    }
 }
