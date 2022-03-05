@@ -1,0 +1,42 @@
+@media only screen and (max-width: 650px) {
+
+    
+    .menu {
+        height: auto;
+        justify-content: center;
+        padding: 20px 0 30px 0;
+    }
+
+    .logo {
+        margin: 0 72px 0 72px;
+    }
+
+    .link ul {
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    main {
+        height: fit-content;
+    }
+
+    .container {
+        width: 95%;
+        margin-top: 150px;
+    
+    }
+
+    .box1 {
+        width: 250px;
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .box1 p {
+        font-size: 4em;
+    }
+
+    .texto h1 {
+        text-align: center;
+    }
+}

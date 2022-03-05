@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    border: none;
+    box-sizing: border-box;
+    line-height: 1.4em;
+}
+
+body {
+    background: linear-gradient(to top, #03c3ee, #0367A6 );
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.877);
+    max-width: 600px;
+    height: fit-content;
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+    
+}
+
+.titulo {
+    background-color: #129bd6;
+    padding: 15px 50px;
+    color: white;
+}
+
+.titulo p {
+    font-size: 0.8em;
+    text-indent: 0.2em;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.box {
+    margin: 10px;
+}
+
+input {
+    border-bottom: 2px solid #63636334;
+    height: 30px;
+    width: 220px;
+    margin: 10px 0;
+    background: none;
+}
+
+input:hover {
+    background: linear-gradient( to top, rgba(177, 177, 177, 0.062) 10%, #ffffff25)
+}
+
+input:focus {
+    outline: 0;
+    background: linear-gradient( to top, rgba(177, 177, 177, 0.068) 10%, #ffffff00)
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    display: inline-block;
+}
+
+.btn button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #129bd6;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+    letter-spacing: 3px;
+}
+
+.btn button:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+
+@media (max-width:500px) {
+
+    body {
+        height: fit-content;
+    }
+    
+    .container {
+    position:static;
+    transform: translateY(0);
+    margin: 5px;
+    }
+
+    input {
+        border-bottom: 2px solid #63636334;
+        height: 30px;
+        width: 300px;
+        margin: 10px 0;
+        background: none;
+    }
+}

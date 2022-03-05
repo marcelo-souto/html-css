@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        a::before {
+            content: "< ";
+        }
+
+        a::after {
+            content: " >";
+        }
+
+        a:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellowgreen;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Acesse <a href="https://www.facebook.com/marcelo.souto.1997" target="_blank">aqui</a> o site 01</p>
+    <p>Acesse <a href="#">aqui</a> o site 02</p>
+    <p>Acesse <a href="#">aqui</a> o site 03</p>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/GraphikRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/GraphikBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semibold';
+        src: url('../fonts/GraphikSemibold.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Italic';
+    src: url('../fonts/GraphikRegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}

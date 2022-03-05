@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        body {
+            font-family: 'Poppins';
+            margin: 0px;
+            background-color: rgb(228, 228, 228);
+        }  
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(to top, #c31ff5, #8716FA);   
+            height: 200px;
+            margin: auto;
+            margin-bottom: 3px;    
+        }
+
+        .header > div {
+            display: flex;
+            align-items: center;
+            width: 1000px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .titulo {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 253, 253);
+            font-size: 6em;
+            margin: auto;
+        }
+
+        .menu {
+            display: flex;
+            background-color: #c31ff5;  
+            height: 40px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 3px;
+            box-shadow: 0px 3px 10px 0px #6311b4a9;
+        }
+
+        .menu > div {
+            display: block;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 7px;
+            padding-left: 4px;
+            padding-right: 20px;
+        }
+
+        ul, li {
+            padding: 0px;
+            margin: 0px;
+            display: inline-block;
+        }
+
+
+        main {
+            display: block;
+            background-color: white;
+            width: 800px;
+            margin: auto;
+            margin-bottom: 50px;
+            padding: 20px;
+            text-align: justify;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        footer {
+            display: flex;
+            background-color: #c31ff5;   
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 253, 253);
+            font-size: 1em;
+            margin: auto;
+        }
+
+        .rodape {
+            display: block;
+            margin: auto;
+        }
+
+        @media (max-width:855px) {
+            main {
+                width: auto;
+                border-radius: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width:660px) {
+            a {
+                font-size: 1em;
+                margin: 1px;
+                padding: 8px;
+            }
+            h1 {
+                font-size: calc(2em - 0.5em)
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1 class="titulo">Moderna</h1>
+        </div>
+    </div>
+    <div class="menu">
+        <div>
+            <ul>
+                <li><a href="">QUEM SOMOS</a></li>
+                <li><a href="">TRABALHE CONOSCO</a></li>
+                <li><a href="">CONSTITUCIONAL</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <h1>Nossa Empresa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore itaque recusandae excepturi cupiditate dolorem cumque deleniti ullam nobis alias asperiores reiciendis assumenda dicta animi, numquam facilis odio quidem facere! Corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere qui officia, obcaecati nobis ad voluptas expedita iste voluptate pariatur voluptatum officiis architecto quia et adipisci ducimus suscipit earum exercitationem ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa eum obcaecati, expedita, accusamus vitae quia repellendus hic voluptas cupiditate officiis quisquam aspernatur delectus! Cupiditate distinctio quisquam voluptatem dicta dolorum.</p>
+        <h1>Nossos Objetivos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae eum ratione, molestias perspiciatis, similique accusamus repellendus explicabo expedita unde possimus minima, beatae qui amet quia ullam ut iusto inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit, hic vero quos cumque asperiores ipsum animi aperiam, quod adipisci nobis excepturi velit aut placeat a, nisi numquam est! Nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi unde, veritatis tempore voluptatibus, eaque, minima nesciunt beatae omnis quis adipisci magnam ratione. Quod optio sunt autem ducimus et officiis?</p>
+        <h1>Valores</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore itaque recusandae excepturi cupiditate dolorem cumque deleniti ullam nobis alias asperiores reiciendis assumenda dicta animi, numquam facilis odio quidem facere! Corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere qui officia, obcaecati nobis ad voluptas expedita iste voluptate pariatur voluptatum officiis architecto quia et adipisci ducimus suscipit earum exercitationem ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa eum obcaecati, expedita, accusamus vitae quia repellendus hic voluptas cupiditate officiis quisquam aspernatur delectus! Cupiditate distinctio quisquam voluptatem dicta dolorum.</p>
+        <h1>Nossos Visão</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae eum ratione, molestias perspiciatis, similique accusamus repellendus explicabo expedita unde possimus minima, beatae qui amet quia ullam ut iusto inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit, hic vero quos cumque asperiores ipsum animi aperiam, quod adipisci nobis excepturi velit aut placeat a, nisi numquam est! Nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi unde, veritatis tempore voluptatibus, eaque, minima nesciunt beatae omnis quis adipisci magnam ratione. Quod optio sunt autem ducimus et officiis?</p>
+    </main>
+    <footer>
+        <p class="rodape">Direitos Reservados &copy;</p>
+    </footer>
+</body>
+</html>
