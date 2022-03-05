@@ -1,2 +1,2 @@
 # html-css
- Atividades Curso html5 e css3
+ Atividades do curso de html5 e css3
