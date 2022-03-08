@@ -285,12 +285,12 @@ section {
 .trigger-wrapper .titulo::after {
     content: '❮';
     float: right;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     transition: transform 0.3s ease;
 }
 
 .trigger-input:checked + .trigger-wrapper .titulo::after {
-    transform: rotate(270deg);
+    transform: rotate(90deg);
 }
 
 .trigger-wrapper .conteudo {
