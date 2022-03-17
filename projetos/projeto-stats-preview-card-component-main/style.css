@@ -34,14 +34,6 @@ main {
   border-radius: 0.5em;
   overflow: hidden;
   margin: 10px;
-  position: relative;
-  top: -100px;
-  transform: translateY(-50px);
-  transition: transform 0.25s;
-}
-
-.card {
-  transform: translateY(50px);
 }
 
 .content {
