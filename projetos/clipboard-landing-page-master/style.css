@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* -----------------------RESET ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------- VARIAVEIS --------------------- */
+
+:root {
+    --color1: hsl(171, 66%, 44%);
+    --color2: hsl(233, 100%, 69%);
+    --color3: hsl(210, 10%, 33%);
+    --color4: hsl(201, 11%, 66%);
+    --regular: normal 400 1.125em 'Bai Jamjuree', sans-serif;
+    --bold: normal 600 1.125em 'Bai Jamjuree', sans-serif;
+}
+
+/* --------------- CONFIGS GERAIS ----------------------- */
+
+
+
+.margin {
+    margin: 1.5rem 0;
+}
+
+/* TEXT AND FONT STYLES */
+
+.text-align--center {
+    text-align: center;
+}
+
+.p--color {
+    color: var(--color4);
+}
+
+.section__title--size {
+    font-size: 2em;
+}
+
+.title--color {
+    color: var(--color3);
+}
+
+.line-height {
+    line-height: 1.8em;
+}
+
+/* GRID CONFIGS */
+
+.column {
+    grid-column: 2 / 3;
+}
+
+.allcolumns {
+    grid-column: 1 / -1;
+}
+
+/* FLEX CONFIGS */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ANIMATION HOVER */
+
+.hover {
+    transition: filter 0.25s ;
+}
+
+.hover:hover {
+    filter: brightness(1.125);
+}
+
+.hover-links {
+    transition: filter 0.25s ;
+}
+
+.hover-links:hover {
+    filter: invert(54%) sepia(60%) saturate(529%) hue-rotate(120deg) brightness(97%) contrast(89%);
+}
+
+/* --------------------- BODY -------------------------- */
+
+body {
+    font: var(--regular);
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: max(1920px), 363px;
+
+    display: grid;
+    row-gap: 80px;
+    column-gap: 20px;
+    grid-template-rows: 650px;
+    grid-template-columns: 1fr minmax(auto, 690px) 1fr;
+
+}
+
+/* -------------------- HEADER ------------------------- */
+
+.header {
+    padding-top: 5vh;
+}
+
+.btns {
+    margin-top: 40px;
+    width: fit-content;
+}
+
+.btn1, .btn2 {
+    padding: 12px 24px;
+    border-radius: 40px;
+    font: var(--bold);
+    color: #fff;
+    background-color: var(--color1);
+    border: 2px solid var(--color1);
+    cursor: pointer;
+    font-size: 0.95em;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+    margin: 10px;
+}
+
+.btn2 {
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.header__title {
+    font-size: max(2.3vw, 2em);
+}
+
+/* ------------ SECTION PRINCIPAL W/ PHOTO -------------- */
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.imagem img {
+    position: relative;
+    left: -70px;
+    width: 110%;
+}
+
+.list {
+    padding: 0 40px 0 6vw;
+}
+
+.list__p {
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.devices img {
+    max-width: 1200px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ------------- CARDS ------------------- */
+
+.card {
+    width: 340px;
+    height: 240px;
+}
+
+.card img {
+    margin-bottom: 2em;
+}
+
+.partners img {
+    margin: 40px 90px;
+}
+
+/* -------------------- FOOTER ----------------------- */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 60vw) minmax( 150px, 1fr);
+    grid-template-rows: 150px auto;
+    justify-items: center;
+    align-items: center;
+
+    background-color: #f5f6f8;
+}
+
+.footer img {
+    max-width: 60px;
+}
+
+.footer ul {
+    list-style: none;
+    columns: 3;
+    column-gap: 4vw;
+}
+
+.footer ul li {
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.social-icons img {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.attribution {
+    background-color: var(--color1);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.attribution a {
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.attribution a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

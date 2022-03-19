@@ -1,0 +1,47 @@
+@media (max-width: 740px) {
+
+    .btn1, .btn2 {
+        width: 90%;
+    }
+
+    .principal {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .imagem img {
+        left: 0;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;   
+    }
+
+    .list {
+        text-align: center;
+    }
+
+    .footer {
+        grid-template-columns: auto;
+        grid-template-rows: 100px;
+    }
+
+    .footer ul {
+        columns: 1;
+        text-align: center;
+    }
+
+    .footer ul li {
+        padding: 10px 0;
+    }
+
+    .social-icons {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+    }
+}
