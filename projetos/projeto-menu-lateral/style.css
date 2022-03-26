@@ -59,11 +59,11 @@ body {
 
 #nav {
   background-color: transparent;
-  width: 300px;
+  width: 54px;
   padding: 60px 0 0 0;
   position: absolute;
   top: 0px;
-  right: -240px;
+  right: 0;
   height: calc(100vh - 60px);
   transition: all .2s ease;
   z-index: 99;
@@ -116,7 +116,7 @@ body {
 
 #nav.active {
   background-color: #084787;
-  right: 0;
+  width: 300px;
   box-shadow: 00px -1px 20px rgba(0, 0, 0, 0.658);
 }
 
