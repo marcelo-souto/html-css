@@ -3,5 +3,5 @@
 //  } 
 
 function mostrar(imgsrc) {
-    document.getElementById('product-principal').style.backgroundImage = 'url'+'("../'+imgsrc+'")'
+    document.getElementById('product-principal').style.backgroundImage = 'url'+'("'+imgsrc+'")'
  }
