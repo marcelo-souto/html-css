@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  --c3:#E1E1E1;
+  --c6:#ABAAAA;
+  --c7:#8F8F8F;
+  --c9:#626161;
+  --c10:#4B4B4B;
+  --c14:#171717;
+  --grad:linear-gradient(to bottom, #30C0ED, #189AD3);;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}

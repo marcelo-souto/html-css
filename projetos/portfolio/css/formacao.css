@@ -1,0 +1,154 @@
+.formacao {
+  background-color: var(--c14);
+}
+
+.formacao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+  max-width: 5ch;
+}
+
+.formacao-resumo {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  color: var(--c7);
+  margin-bottom: 60px;
+}
+
+.formacao-resumo strong {
+  color: #fff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.faculdade-tipo {
+  color: var(--c7);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.faculdade-curso {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 60px;
+  flex: 1;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 20px;
+  background-image: var(--grad);
+  border-radius: 2px 0 0 2px;
+  position: absolute;
+  left: -26px;
+  top: 10px;
+  z-index: 1;
+
+}
+
+.faculdade-instituicao {
+  color: var(--c7);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+  color: var(--c7);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before {
+  background: url('../img/livro.svg') no-repeat center;
+}
+
+.idiomas h3::before {
+  background: url('../img/idioma.svg') no-repeat center;
+}
+
+.formacao-extra li {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.formacao-extra span {
+  color: var(--c7);
+  margin-left: 10px;
+}
+
+.cursos li:nth-child(1), .idiomas li:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 80px 20px;
+  }
+
+  .formacao .subtitulo {
+    color: #fff;
+  }
+
+  .formacao-resumo {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
