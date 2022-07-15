@@ -1,0 +1,121 @@
+.sobremim {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  position: relative;
+}
+
+.sobremim::after {
+  content: '';
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid var(--cor-secundaria);
+  position: absolute;
+  bottom: -30px;
+  left: 26px;
+  z-index: 1;
+}
+
+.sobremim .subtitulo {
+  color: var(--cor-primaria);
+}
+
+.sobremim-resumo {
+  font-family: "Chivo", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--c10);
+}
+
+.sobremim-resumo strong {
+  color: #000;
+}
+
+.sobremim-img {
+  width: 100%;
+  align-self: end;
+  justify-self: end;
+}
+
+.sobremim-img img {
+  width: inherit;
+}
+
+.competencias {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.competencias li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.barra {
+  max-width: 640px;
+  height: 24px;
+  padding-right: 6px;
+  margin-right: 40px;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 2px;
+  font-size: 0.875rem;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progresso {
+  width: 80%;
+  height: 100%;
+  background-color: var(--cor-primaria);
+}
+
+[data-tec="javascript"] .progresso {
+  width: 40%;
+}
+
+[data-tec="react"], [data-tec="sass"] {
+  justify-content: flex-end;
+}
+
+@media (max-width: 865px) {
+  .sobremim {
+    grid-template-columns: 1fr;
+  }
+  .sobremim-img {
+    display: none;
+  }
+  .barra {
+    margin-right: 0px
+  }
+}
+
+@media (max-width: 620px) {
+  .sobremim::after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--cor-secundaria);
+    bottom: -20px;
+  }
+  .sobremim {
+    padding-top: 40px;
+  }
+
+  .sobremim-resumo {
+    font-size: 1rem;
+  }
+
+  .competencias {
+    margin-bottom: 60px;
+  }
+}

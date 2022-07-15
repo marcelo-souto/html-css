@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Rubik:wght@400;600&display=swap');
+
+:root {
+  --cor-primaria: #001858;
+  --cor-secundaria: #FEF6E4;
+  --c10: #4B4B4B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--cor-secundaria);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo {
+ font-family: 'Chivo', sans-serif;
+ font-size: 6rem;
+ line-height: 1.2;
+ padding-bottom: 40px;
+}
+
+@media (max-width: 1060px) {
+  .subtitulo{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .subtitulo {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .subtitulo {
+    font-size: 2.4rem;
+    padding-bottom: 24px;
+  }
+}
